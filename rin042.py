@@ -1,13 +1,19 @@
 # ゲームクラス
-class menmengame(OtelloAI):
+class menmengame(OthelloAI):
     DRAW = -1
 
-    def __init__(self, turn=0, start_player=BLACK):
-        super().__init__()
-        self.player = start_player
-        self.turn = turn
-        self.winner = None
-        self.was_passed = False
+    # def __init__(self, turn=0, start_player=BLACK):
+    #     super().__init__()
+    #     self.player = start_player
+    #     self.turn = turn
+    #     self.winner = None
+    #     self.was_passed = False
+
+    def __init__(self):
+        self.face = '🐇' # 自分の好きな絵文字
+        self.name = 'みな' # 自分の好きな名前
+
+
 
     def is_finished(self):
         return self.winner is not None
