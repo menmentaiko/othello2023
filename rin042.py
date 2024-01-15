@@ -1,5 +1,5 @@
 # ゲームクラス
-class menmengame(OthelloAI):
+class menmenAI(OthelloAI):
     DRAW = -1
 
     # def __init__(self, turn=0, start_player=BLACK):
